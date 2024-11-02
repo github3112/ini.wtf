@@ -1,0 +1,219 @@
+:root {
+    --primary-color: #3a8eea;
+    --secondary-color: #e1f0ff;
+    --text-color: #333;
+    --button-color: #007bff;
+    --button-hover-color: #0056b3;
+    --background-color: #f0faff;
+}
+
+body {
+    background: linear-gradient(135deg, #242830, #8a94a7); 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.6; 
+    margin: 0;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+h2 {
+    color: #8a94a7;
+    margin-bottom: 1rem;
+}
+
+h5 .card-title {
+    color: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.my-2 {
+    margin: 0.5rem 0;
+}
+
+.btn {
+    background: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--button-hover-color);
+}
+
+.text-info {
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-header {
+    background: var(--secondary-color);
+}
+
+.accordion-button {
+    background-color: var(--secondary-color);
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-body {
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+
+
+.btn-outline-light {
+    border: 2px solid var(--button-color);
+    color: var(--button-color);
+    background: transparent;
+}
+
+.btn-outline-light:hover {
+    background: var(--button-color);
+    color: white;
+}
+
+/* Iframe styles */
+.iframe-container {
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 600px; /* Adjust as needed */
+    border: none;
+    border-radius: 10px;
+    display: block;
+}
+.form-control {
+    width: calc(100% - 20px); /* Ensures padding is considered */
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensures proper alignment */
+}
+
+/* ini table */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+/* ini end table */
+
+/* ini card */
+.card {
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body .card-title-secondary {
+    font-size: 3rem; /* Increase font size for prominence */
+    font-family: 'Georgia', serif; /* Use a stylish serif font */
+    color: #fff; /* Main blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+    margin: 2rem 0; /* Maintain vertical spacing */
+    letter-spacing: 1px; /* Slightly increase spacing between letters */
+    text-transform: lowercase; /* Make text uppercase for emphasis */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+} 
+
+.card img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounds the corners of the image */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+/* ini end card */
+
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 8px; /* Reduce padding on smaller screens */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .card-body {
+        padding: 15px; /* Adjust padding for card body */
+    }
+}
+
+.fajri-title {
+    font-size: 3rem; /* Increase font size for prominence */
+    font-family: 'Georgia', serif; /* Use a stylish serif font */
+    color: #fff; /* Main blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+    margin: 2rem 0; /* Maintain vertical spacing */
+    letter-spacing: 1px; /* Slightly increase spacing between letters */
+    text-transform: lowercase; /* Make text uppercase for emphasis */
+    transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.fajri-title:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover for interactivity */
+}
